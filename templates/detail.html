@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<div class="container-fluid h-100 justify-content-center">
+    <div class="row justify-content-center align-middle h-100">
+        <div class="col-10 text-center align-self-center stats_container">
+            <h1 class="font-weight-bold text-primary">Link details</h1><br>
+            <h5 class="text-primary">Short URL</h5>
+            <h5>https://website.com/{{short_url}}</h5><br>
+            <h5 class="text-primary">Stats</h5>
+            <h5>https://website.com/{{short_url}}/stats</h5><br>
+            <h5 class="text-primary">Original URL</h5>
+            <h5>{{orginal_url}}</h5><br>
+            <a href="{{ orginal_url }}"> <button class="btn btn-primary">Visit link</button></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

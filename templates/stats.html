@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<div class="container-fluid h-100 justify-content-center">
+    <div class="row justify-content-center align-middle h-100">
+        <div class="col-10 text-center align-self-center stats_container">
+            <h1 class="font-weight-bold text-primary">Link stats</h1>
+            <h5>{{orginal}}</h5><br>
+            <h3>Has been clicked <span class="text-primary"> {{ clicked }}</span> times</h3>
+            <a href="{{ orginal }}" ><button class="btn btn-primary">Visit link</button></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

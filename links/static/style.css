@@ -1,0 +1,23 @@
+
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url("back1.jpg");
+    background-size: cover;
+}
+#url_input{
+    width: 18rem;
+}
+.stats_container{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+h5{
+    word-break: break-all;
+}
